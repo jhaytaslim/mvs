@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yj3kxAEak8N43xX3FRiXfkx0+zRSAIZoF0QXg2QgUqWTSfX2yrhLpA9mPRdZh9VALMOvK68O0I7w6wg9cN77+g==",
+  "success": true,
+  "projectFilePath": "/Users/apple/Documents/Workspace/Personal/Net/mvccore/mvccore.csproj",
+  "expectedPackageFiles": [
+    "/Users/apple/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

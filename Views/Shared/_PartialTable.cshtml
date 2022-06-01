@@ -1,0 +1,59 @@
+
+@model IEnumerable<mvccore.Models.TimesheetViewModel>
+
+
+<div id="clocks" class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;">Name</th>
+            @* <th style="width: 22%;">Name</th> *@
+            <th style="width: 22%;">Clock In</th>
+            <th style="width: 22%;">Clock Out</th>
+          </tr>
+        </thead>
+        <tbody>
+            @if (Model.Count() > 0)
+                {
+                    @foreach (var item in Model)
+                    {
+                        Console.WriteLine($"{item.user.name} - {item.sheet.start}");
+          <tr>
+            <th scope="row" class="text-start">@item.user.name</th>
+            <td>@item.sheet.start</td>
+            <td>@item.sheet.end</td>
+            @* <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td> *@
+          </tr>
+                    }
+                    }
+          
+        </tbody>
+
+        @* <tbody>
+          <tr>
+            <th scope="row" class="text-start">Permissions</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Sharing</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Unlimited members</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Extra security</th>
+            <td></td>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody> *@
+      </table>
+    </div>
